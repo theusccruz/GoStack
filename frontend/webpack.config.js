@@ -18,8 +18,27 @@ module.exports = {
                 exclude: /node_modules/, // arquivos que vieram pelo node_modules não passam pelo webpack
                 use: {
                     loader: 'babel-loader'
-                },
-                test: /\.css$/,    
+                }
+            },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: [
+                    /* 
+                        -->css-loader vai ler o arquivo css e suas importações 
+                        e passar para o webpack
+                        -->style-loader vai pegar o css que foi interpretado 
+                        e vai injetar no html
+                    */
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                ]
+            },
+            {
+                test: /.*\.(gif|png|jpe?g)/i,
+                use: {
+                    loader: "file-loader"
+                }
             }
         ]
     }
