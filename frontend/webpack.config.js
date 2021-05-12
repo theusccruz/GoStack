@@ -11,14 +11,15 @@ module.exports = {
         // assim o webpack server vai monitorar modificações
         contentBase: path.resolve(__dirname, 'public'),
     },
-    module: {
+    module: { // tratando os loaders
         rules: [
-            {
+            { // usando o babel-loader para arquivos js
                 test: /\.js$/,
                 exclude: /node_modules/, // arquivos que vieram pelo node_modules não passam pelo webpack
                 use: {
                     loader: 'babel-loader'
-                }
+                },
+                test: /\.css$/,    
             }
         ]
     }
