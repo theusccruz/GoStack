@@ -9,8 +9,7 @@ export default function App() {
     useEffect(() => {
         api.get('projects').then(response => {            
             setProjects(response.data);
-        })
-
+        });
     }, []);
 
     const addProject = async () => {
@@ -25,10 +24,11 @@ export default function App() {
         <>
             <StatusBar
                 barStyle='light-content'
-                backgroundColor='#7159c1'
+                backgroundColor='#7159C1'
             />
 
-            <SafeAreaView style={styles.container}>
+            <SafeAreaView style={styles.container}>{/* área segura da aplicação */}
+                {/* FlatList lida melhor com listas do que a View */}
                 <FlatList
                     data={projects}
                     keyExtractor={project => project.id}
@@ -39,7 +39,7 @@ export default function App() {
                             {project.title}
                         </Text>
                     )}
-                />
+                /> 
                 <TouchableOpacity 
                     activeOpacity={0.6} 
                     style={styles.button}
@@ -69,19 +69,19 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: { // equivalente a classe do css
-        backgroundColor: '#7159c1',
+        backgroundColor: '#FBF9FF',
         flex: 1, // todos componentes RN tem display flex
         alignItems: 'center',
         padding: 10,
     },
     project: {
-        color: '#fff',
-        fontSize: 24,
+        color: '#7159C1',
+        fontSize: 26,
         fontWeight: 'bold'
     },
     button: {
         backgroundColor: '#21A179',  
-        margin: 20,
+        margin: 10,
         height: 50,
         width: 150,
         borderRadius: 4,
