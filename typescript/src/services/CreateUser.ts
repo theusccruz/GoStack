@@ -1,0 +1,15 @@
+interface CreateUserData {
+    name?: string,
+    email: string,
+    password: string
+    techs: Array<string>;
+}
+
+export default function createUser(
+    { name, email, password }: CreateUserData) {
+    const newUser = {
+        name,
+        email,
+        password
+    }
+}
