@@ -6,9 +6,17 @@ export function helloWorld(request: Request, response: Response) {
         name: 'Matheus',
         email: 'matheus89476@outlook.com',
         password: '13245',
-        techs: ['Node', 'React', 'React Native']
+        techs: [
+            'Node',
+            'React',
+            'React Native',
+            {
+                title: 'Javascript',
+                experience: 12
+            }
+        ]
     });
-    
+
     return response.json({
         message: 'hello'
     });
