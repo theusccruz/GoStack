@@ -39,4 +39,25 @@ Bootcamp Rocketseat
 
 ```yarn tsc```
 
+*Módulo que funciona como servidor que roda código ts sem precisar converte-lo para js*
+
+```yarn add ts-nove-dev```
+
+*Instala e inicializa o eslint*
+
+```yarn add eslint -D```
+```yarn eslint --init```
+
+*Instala o airbnb base no eslint via yarn*
+
+```yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.22.1 @typescript-eslint/parser@latest```
+
+*Módulo que entende as importações de arquivos ts*
+
+```yarn add -D eslint-import-resolver-typescript```
+
+*Instalação do Prettier*
+
+```yarn add prettier eslint-config-prettier eslint-plugin-prettier -D```
+
  
