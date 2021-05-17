@@ -72,10 +72,10 @@ Bootcamp Rocketseat
 *"-p 3333:3333" espelha a porta da máquina local para o contêiner*<br>
 *"-d" executa o comando em background, assim o terminal fica liberado*
  
-```docker run -p 3333:3333 -d noda_da_imagem```
+```docker run -p 3333:3333 -d nome_da_imagem```
 
 *Entra no terminal do contêiner*<br>
 *"-it" indca que vamos usar o terminal*<br>
 *"/bin/bash" comando que queremos executar, ou seja, usar o terminal bash*
 
-```docker container exec -it alp1 /bin/sh```
+```docker container exec -it nome_da_imagem /bin/sh```
