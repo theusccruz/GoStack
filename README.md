@@ -27,6 +27,10 @@ Bootcamp Rocketseat
 
 ### Typescrypt
 
+*Adiciona typescript*
+
+```yarn add typescript -D```
+
 *Gera um arquivo convertido para js*
 
 ```yarn tsc arquivo.ts```
