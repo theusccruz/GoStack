@@ -45,7 +45,7 @@ Bootcamp Rocketseat
 
 *Módulo que funciona como servidor que roda código ts sem precisar converte-lo para js*
 
-```yarn add ts-nove-dev```
+```yarn add ts-nove-dev -D```
 
 *Instala e inicializa o eslint*
 
